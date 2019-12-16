@@ -1,0 +1,1014 @@
+Started GET "/" for 127.0.0.1 at 2019-12-11 12:23:48 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 444)
+Completed 200 OK in 14ms (Views: 8.6ms | MongoDB: 0.0ms | Allocations: 2474)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-11 12:24:09 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 7183)
+Completed 500 Internal Server Error in 27ms (MongoDB: 0.0ms | Allocations: 13518)
+
+
+  
+ActionView::Template::Error (
+message:
+  No configuration could be found for a client named 'default'.
+summary:
+  When attempting to create the new client, Mongoid could not find a client configuration for the name: 'default'. This is necessary in order to know the host, port, and options needed to connect.
+resolution:
+  Double check your mongoid.yml to make sure under the clients key that a configuration exists for 'default'. If you have set the configuration programatically, ensure that 'default' exists in the configuration hash.):
+    14:   </thead>
+    15: 
+    16:   <tbody>
+    17:     <% @users.each do |user| %>
+    18:       <tr>
+    19:         <td><%= user.email %></td>
+    20:         <td><%= user.name %></td>
+  
+app/views/users/index.html.erb:17
+Started GET "/user" for 127.0.0.1 at 2019-12-11 12:25:08 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-12-11 12:25:18 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1113)
+Completed 500 Internal Server Error in 1ms (MongoDB: 0.0ms | Allocations: 1502)
+
+
+  
+ActionView::Template::Error (
+message:
+  No configuration could be found for a client named 'default'.
+summary:
+  When attempting to create the new client, Mongoid could not find a client configuration for the name: 'default'. This is necessary in order to know the host, port, and options needed to connect.
+resolution:
+  Double check your mongoid.yml to make sure under the clients key that a configuration exists for 'default'. If you have set the configuration programatically, ensure that 'default' exists in the configuration hash.):
+    14:   </thead>
+    15: 
+    16:   <tbody>
+    17:     <% @users.each do |user| %>
+    18:       <tr>
+    19:         <td><%= user.email %></td>
+    20:         <td><%= user.name %></td>
+  
+app/views/users/index.html.erb:17
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from <top (required)> at /home/trainee2/Desktop/Rails1/blog/bin/rails:9)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from <top (required)> at /home/trainee2/Desktop/Rails1/blog/bin/rails:9)
+DEPRECATION WARNING: `Module#parent` has been renamed to `module_parent`. `parent` is deprecated and will be removed in Rails 6.1. (called from <top (required)> at /home/trainee2/Desktop/Rails1/blog/bin/rails:9)
+Started GET "/" for 127.0.0.1 at 2019-12-11 12:28:23 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.1ms | Allocations: 444)
+Completed 200 OK in 21ms (Views: 16.2ms | MongoDB: 0.0ms | Allocations: 2474)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-11 12:28:29 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+MONGODB | Error running ismaster on localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS))
+  Rendered users/index.html.erb within layouts/application (Duration: 166189.2ms | Allocations: 19826)
+Completed   in 166198ms (MongoDB: 0.0ms | Allocations: 26630)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-11 12:36:29 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.6ms | Allocations: 444)
+Completed 200 OK in 28ms (Views: 19.7ms | MongoDB: 0.0ms | Allocations: 2474)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-11 12:36:38 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47222474184920 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47222474016720 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-12-11 18:36:38 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001784817>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47222473840600 type=uuid data=0x7d18eee1baf24806...>}}
+MONGODB | [7] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4495)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/trainee2/Desktop/Rails1/blog/public/packs
+[Webpacker] Hash: d010700f5689af4f034c
+Version: webpack 4.41.2
+Time: 1264ms
+Built at: 2019-12-11 12:36:40
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-79133a55ac0e8080e7c9.js   89.1 KiB  application  [emitted] [immutable]  application
+js/application-79133a55ac0e8080e7c9.js.map   97.8 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-79133a55ac0e8080e7c9.js js/application-79133a55ac0e8080e7c9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 707 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 2583ms (Views: 2572.9ms | MongoDB: 0.0ms | Allocations: 32447)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-11 12:37:06 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 32.4ms | Allocations: 11116)
+  Rendered users/new.html.erb within layouts/application (Duration: 34.4ms | Allocations: 11481)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.3ms | MongoDB: 0.0ms | Allocations: 15256)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-11 12:37:09 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"gn+/4tSJyhMZRQlSW97yQkLwxx1auS7AwZhethkCTYIiPD7BGSw8rHCizEKif3xzImYfpsOaKLI+Y4IsUNByaA==", "user"=>{"email"=>"ascasca", "name"=>"ascasc", "last_name"=>"ascasc", "mobile_phone"=>"ascacs"}, "commit"=>"Create User"}
+MONGODB | [8] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df137556a28e65bf1b63a8c'), "email"=>"ascasca", "name"=>"ascasc", "last_name"=>"ascasc", "mobile_phone"=>"ascacs"}], "lsid"=>{"id"=><BSON::Binary:0x47222473840600 type=uuid dat...
+MONGODB | [8] localhost:27017 | blog_development.insert | SUCCEEDED | 0.282s
+Redirected to http://localhost:3000/users/5df137556a28e65bf1b63a8c
+Completed 302 Found in 285ms (MongoDB: 0.3ms | Allocations: 1735)
+
+
+Started GET "/users/5df137556a28e65bf1b63a8c" for 127.0.0.1 at 2019-12-11 12:37:09 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df137556a28e65bf1b63a8c"}
+MONGODB | [9] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df137556a28e65bf1b63a8c')}, "lsid"=>{"id"=><BSON::Binary:0x47222473840600 type=uuid data=0x7d18eee1baf24806...>}}
+MONGODB | [9] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.4ms | MongoDB: 0.0ms | Allocations: 5580)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-11 12:37:15 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [10] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47222473840600 type=uuid data=0x7d18eee1baf24806...>}}
+MONGODB | [10] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.3ms | MongoDB: 0.0ms | Allocations: 5354)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-11 12:59:17 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [11] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47222473840600 type=uuid data=0x7d18eee1baf24806...>}}
+MONGODB | [11] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1790)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 13.3ms | MongoDB: 0.0ms | Allocations: 8958)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-11 12:59:19 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.1ms | Allocations: 1223)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.9ms | MongoDB: 0.0ms | Allocations: 5011)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-11 12:59:23 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"wU/g7S3yzQTv9Mo4nr7EEes6+xxge4/AcozKrM3Si3xhDGHO4Fc7u4YTDyhnH0ogi6wjp/lYibKNdxY2hAC0lg==", "user"=>{"email"=>"", "name"=>"", "last_name"=>"", "mobile_phone"=>""}, "commit"=>"Create User"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 1521)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1617)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.6ms | MongoDB: 0.0ms | Allocations: 6362)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-11 13:11:41 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [12] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47222473840600 type=uuid data=0x7d18eee1baf24806...>}}
+MONGODB | [12] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1787)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.0ms | MongoDB: 0.0ms | Allocations: 8959)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-11 13:55:01 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.6ms | Allocations: 1223)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | MongoDB: 0.0ms | Allocations: 5012)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-11 13:55:03 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"reC6XGlKEZ4gXwlBbLUI1G0K6fnL9cpcU8xyCN+kP0UNozt/pO/nIUm4zFGVFIblDZwxQlLWzC6sN66SlnYArw==", "user"=>{"email"=>"", "name"=>"", "last_name"=>"", "mobile_phone"=>""}, "commit"=>"Create User"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 1518)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1614)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 6.9ms | MongoDB: 0.0ms | Allocations: 6275)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-11 13:55:11 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"5/kk6gVEq5oHyABH6LX5V8OYItn3gf71U7DQWPnqPCoW1Vp0CBT4OLr01xBQydX06sX1mMhicxjEQD6kK8MEig==", "user"=>{"email"=>"xxcvxcvx", "name"=>"", "last_name"=>"vxvxcv", "mobile_phone"=>""}, "commit"=>"Create User"}
+MONGODB | [13] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df1499f6a28e65bf1b63a8d'), "email"=>"xxcvxcvx", "name"=>"", "last_name"=>"vxvxcv", "mobile_phone"=>""}], "lsid"=>{"id"=><BSON::Binary:0x70315694858400 type=uuid data=0xb32c272...
+MONGODB | [13] localhost:27017 | blog_development.insert | SUCCEEDED | 0.000s
+Redirected to http://localhost:3000/users/5df1499f6a28e65bf1b63a8d
+Completed 302 Found in 2ms (MongoDB: 0.0ms | Allocations: 1657)
+
+
+Started GET "/users/5df1499f6a28e65bf1b63a8d" for 127.0.0.1 at 2019-12-11 13:55:11 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df1499f6a28e65bf1b63a8d"}
+MONGODB | [14] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df1499f6a28e65bf1b63a8d')}, "lsid"=>{"id"=><BSON::Binary:0x70315694858400 type=uuid data=0xb32c2723b54944a3...>}}
+MONGODB | [14] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.2ms | MongoDB: 0.0ms | Allocations: 4784)
+
+
+MONGODB | [15] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70315694858400 type=uuid data=0xb32c2723b54944a3...>}]}
+MONGODB | [15] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started GET "/" for 127.0.0.1 at 2019-12-12 11:00:43 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.4ms | Allocations: 444)
+Completed 200 OK in 19ms (Views: 12.2ms | MongoDB: 0.0ms | Allocations: 2509)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 11:00:49 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47030951681420 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47030951399620 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-12-12 17:00:49 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002794567>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}}
+MONGODB | [7] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 4931)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 210ms (Views: 186.0ms | MongoDB: 0.0ms | Allocations: 17207)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-12 11:00:55 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 231.3ms | Allocations: 6146)
+  Rendered users/new.html.erb within layouts/application (Duration: 276.1ms | Allocations: 6511)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 285ms (Views: 283.6ms | MongoDB: 0.0ms | Allocations: 10394)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-12 11:00:56 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"jHNjLC+mFc/0swrif8kSsNLffmstvrj1R6J9NDvDzmkLM8DtU1oHvstPa4huUjyNM8MqDVdvXHPdFPxXUWH3jg==", "user"=>{"email"=>"", "name"=>"", "last_name"=>"", "mobile_phone"=>""}, "commit"=>"Create User"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.6ms | Allocations: 1521)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1617)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.4ms | MongoDB: 0.0ms | Allocations: 6414)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 11:01:01 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [8] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}}
+MONGODB | [8] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | MongoDB: 0.0ms | Allocations: 5546)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-12 11:01:17 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 1206)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1303)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | MongoDB: 0.0ms | Allocations: 5019)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-12 11:01:22 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Xa+LrJUDlnLtVuRm8kLjhirHcdA3ofO9yGkWFJ+I9A7a7yht6f+EA9KqhQzj2c27y9sltk1wFztS35d39SrN6Q==", "user"=>{"email"=>"ccscdsd", "name"=>"sdcsdc", "last_name"=>"sdcsdc", "mobile_phone"=>"sdsdc"}, "commit"=>"Create User"}
+MONGODB | [9] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df272626a28e61f6fd265a2'), "email"=>"ccscdsd", "name"=>"sdcsdc", "last_name"=>"sdcsdc", "mobile_phone"=>"sdsdc"}], "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data...
+MONGODB | [9] localhost:27017 | blog_development.insert | SUCCEEDED | 0.133s
+Redirected to http://localhost:3000/users/5df272626a28e61f6fd265a2
+Completed 302 Found in 136ms (MongoDB: 0.1ms | Allocations: 1730)
+
+
+Started GET "/users/5df272626a28e61f6fd265a2" for 127.0.0.1 at 2019-12-12 11:01:23 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df272626a28e61f6fd265a2"}
+MONGODB | [10] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df272626a28e61f6fd265a2')}, "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}}
+MONGODB | [10] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 45.8ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 56.7ms | MongoDB: 0.0ms | Allocations: 5604)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 11:01:26 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [11] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}}
+MONGODB | [11] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.2ms | MongoDB: 0.0ms | Allocations: 5235)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-12 11:12:24 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.7ms | Allocations: 1204)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1300)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.9ms | MongoDB: 0.0ms | Allocations: 5009)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-12 11:12:28 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Eo2Y6O4DCJGMkxmJi/AckxxLfZ+egiP5AriJeKhFYyWVzTspkv8a4LNveOOaazKu/Vcp+eRTx3+YDggbwudawg==", "user"=>{"email"=>"sdc", "name"=>"sdcsdc", "last_name"=>"sdcsdc", "mobile_phone"=>"sdcsdc"}, "commit"=>"Create User"}
+MONGODB | [12] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df274fc6a28e61f6fd265a3'), "email"=>"sdc", "name"=>"sdcsdc", "last_name"=>"sdcsdc", "mobile_phone"=>"sdcsdc"}], "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x...
+MONGODB | [12] localhost:27017 | blog_development.insert | SUCCEEDED | 0.000s
+Redirected to http://localhost:3000/users/5df274fc6a28e61f6fd265a3
+Completed 302 Found in 6ms (MongoDB: 0.0ms | Allocations: 1664)
+
+
+Started GET "/users/5df274fc6a28e61f6fd265a3" for 127.0.0.1 at 2019-12-12 11:12:28 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df274fc6a28e61f6fd265a3"}
+MONGODB | [13] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df274fc6a28e61f6fd265a3')}, "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}}
+MONGODB | [13] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | MongoDB: 0.0ms | Allocations: 5203)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 11:12:30 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [14] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}}
+MONGODB | [14] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.9ms | MongoDB: 0.0ms | Allocations: 5403)
+
+
+MONGODB | [15] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47030951187560 type=uuid data=0x9194b30e9b8e49e9...>}]}
+MONGODB | [15] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started GET "/" for 127.0.0.1 at 2019-12-12 17:25:25 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.3ms | Allocations: 444)
+Completed 200 OK in 23ms (Views: 16.8ms | MongoDB: 0.0ms | Allocations: 2616)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:25:30 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47093187527220 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47093187189340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-12-12 23:25:30 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002414565>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [7] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 4824)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 45.3ms | MongoDB: 0.0ms | Allocations: 17675)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:27:22 -0600
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+MONGODB | [8] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [8] localhost:27017 | blog_development.find | SUCCEEDED | 0.003s
+  Rendered users/_user.json.jbuilder (Duration: 10.0ms | Allocations: 3306)
+  Rendered users/index.json.jbuilder (Duration: 41.0ms | Allocations: 4887)
+Completed 500 Internal Server Error in 52ms (MongoDB: 0.0ms | Allocations: 9414)
+
+
+  
+ActionView::Template::Error (undefined method `created_at' for #<User:0x00007f761055d9e8>
+Did you mean?  create_relation):
+    1: json.extract! user, :id, :email, :name, :last_name, :mobile_phone, :created_at, :updated_at
+    2: json.url user_url(user, format: :json)
+  
+app/views/users/_user.json.jbuilder:1
+app/views/users/index.json.jbuilder:1
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:27:40 -0600
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+MONGODB | [9] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [9] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/_user.json.jbuilder (Duration: 11.1ms | Allocations: 2643)
+  Rendered users/index.json.jbuilder (Duration: 13.0ms | Allocations: 4062)
+Completed 500 Internal Server Error in 22ms (MongoDB: 0.0ms | Allocations: 8271)
+
+
+  
+ActionView::Template::Error (undefined method `created_at' for #<User:0x00007f7610bd25d0>
+Did you mean?  create_relation):
+    1: json.extract! user, :id, :email, :name, :last_name, :mobile_phone, :created_at, :updated_at
+    2: json.url user_url(user, format: :json)
+  
+app/views/users/_user.json.jbuilder:1
+app/views/users/index.json.jbuilder:1
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:27:50 -0600
+Processing by UsersController#index as JPEG
+Completed 406 Not Acceptable in 6ms (MongoDB: 0.0ms | Allocations: 4450)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["image/jpeg"]
+request.variant: []):
+  
+actionpack (6.0.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:27:59 -0600
+Processing by UsersController#index as 
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [10] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [10] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.8ms | MongoDB: 0.0ms | Allocations: 9717)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:28:06 -0600
+Processing by UsersController#index as 
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [11] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [11] localhost:27017 | blog_development.find | SUCCEEDED | 0.003s
+  Rendered users/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2341)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 10.5ms | MongoDB: 0.0ms | Allocations: 9543)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:28:19 -0600
+Processing by UsersController#index as JSON
+  Rendering users/index.json.jbuilder
+MONGODB | [12] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [12] localhost:27017 | blog_development.find | SUCCEEDED | 0.005s
+  Rendered users/_user.json.jbuilder (Duration: 7.6ms | Allocations: 2639)
+  Rendered users/index.json.jbuilder (Duration: 14.6ms | Allocations: 4042)
+Completed 500 Internal Server Error in 22ms (MongoDB: 0.0ms | Allocations: 8124)
+
+
+  
+ActionView::Template::Error (undefined method `created_at' for #<User:0x00007f76109168a0>
+Did you mean?  create_relation):
+    1: json.extract! user, :id, :email, :name, :last_name, :mobile_phone, :created_at, :updated_at
+    2: json.url user_url(user, format: :json)
+  
+app/views/users/_user.json.jbuilder:1
+app/views/users/index.json.jbuilder:1
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:28:39 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [13] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [13] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.8ms | MongoDB: 0.0ms | Allocations: 9509)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:31:45 -0600
+Processing by UsersController#index as XML
+Completed 406 Not Acceptable in 7ms (MongoDB: 0.0ms | Allocations: 4238)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["application/xml"]
+request.variant: []):
+  
+actionpack (6.0.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (6.0.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:31:58 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [14] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [14] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2342)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 14.3ms | MongoDB: 0.0ms | Allocations: 9548)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-12 17:32:26 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [15] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}}
+MONGODB | [15] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2303)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 12.6ms | MongoDB: 0.0ms | Allocations: 9502)
+
+
+MONGODB | [16] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47093186918260 type=uuid data=0x78b9cdc5874e4f7d...>}]}
+MONGODB | [16] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started GET "/" for 127.0.0.1 at 2019-12-13 15:30:01 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/trainee2/.rvm/gems/ruby-2.5.1/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 33.4ms | Allocations: 444)
+Completed 200 OK in 91ms (Views: 67.5ms | MongoDB: 0.0ms | Allocations: 2474)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:30:05 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47419054978240 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47419054743960 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-12-13 21:30:05 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>6, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.001437724>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | [7] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [7] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 5276)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 222ms (Views: 187.4ms | MongoDB: 0.0ms | Allocations: 17516)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:30:17 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 133.6ms | Allocations: 11052)
+  Rendered users/new.html.erb within layouts/application (Duration: 152.4ms | Allocations: 11417)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 162ms (Views: 159.3ms | MongoDB: 0.0ms | Allocations: 15182)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:33:46 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [8] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [8] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2307)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 8.5ms | MongoDB: 0.0ms | Allocations: 9624)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:33:48 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.6ms | Allocations: 1223)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | MongoDB: 0.0ms | Allocations: 5008)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:35:09 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 1899)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2260)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.5ms | MongoDB: 0.0ms | Allocations: 6677)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-13 15:35:16 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"+Z7fiuIdyMeWbIfhbO9ltIvqGb+OWJjW4VXOjlup+9xcpsbqhQum42rPwtni/G0ce0W/MzJoeMsbjX6+TGHMjA==", "user"=>{"email"=>"ascasc", "name"=>"ascas", "last_name"=>"ascasc", "mobile_phone"=>"ascasc", "work_place"=>"ascasc"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :work_place[0m
+MONGODB | [9] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df404146a28e6201852405d'), "email"=>"ascasc", "name"=>"ascas", "last_name"=>"ascasc", "mobile_phone"=>"ascasc"}], "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=...
+MONGODB | [9] localhost:27017 | blog_development.insert | SUCCEEDED | 0.186s
+Redirected to http://localhost:3000/users/5df404146a28e6201852405d
+Completed 302 Found in 190ms (MongoDB: 0.2ms | Allocations: 1793)
+
+
+Started GET "/users/5df404146a28e6201852405d" for 127.0.0.1 at 2019-12-13 15:35:16 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df404146a28e6201852405d"}
+MONGODB | [10] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df404146a28e6201852405d')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [10] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.5ms | MongoDB: 0.0ms | Allocations: 5574)
+
+
+Started GET "/users/5df404146a28e6201852405d" for 127.0.0.1 at 2019-12-13 15:37:25 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df404146a28e6201852405d"}
+MONGODB | [11] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df404146a28e6201852405d')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [11] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 421)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.0ms | MongoDB: 0.0ms | Allocations: 9819)
+
+
+Started GET "/users/5df404146a28e6201852405d/edit" for 127.0.0.1 at 2019-12-13 15:37:28 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5df404146a28e6201852405d"}
+MONGODB | [12] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df404146a28e6201852405d')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [12] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.8ms | Allocations: 2016)
+  Rendered users/edit.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2432)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.0ms | MongoDB: 0.0ms | Allocations: 7616)
+
+
+Started PATCH "/users/5df404146a28e6201852405d" for 127.0.0.1 at 2019-12-13 15:37:30 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"0Uq3STSxnqpma90r0+24x817xZDEHNVqVPor/MMAym4ok/TIYq/Pj2aMa2nkL3SId07wfg62DFC4nM9JKbJGDA==", "user"=>{"email"=>"ascasc", "name"=>"ascas", "last_name"=>"ascasc", "mobile_phone"=>"ascasc", "work_place"=>"ascac"}, "commit"=>"Update User", "id"=>"5df404146a28e6201852405d"}
+MONGODB | [13] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df404146a28e6201852405d')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [13] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+MONGODB | [14] localhost:27017 #1 | blog_development.update | STARTED | {"update"=>"users", "ordered"=>true, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5df404146a28e6201852405d')}, "u"=>{"$set"=>{"work_place"=>"ascac"}}}], "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [14] localhost:27017 | blog_development.update | SUCCEEDED | 0.005s
+Redirected to http://localhost:3000/users/5df404146a28e6201852405d
+Completed 302 Found in 10ms (MongoDB: 0.0ms | Allocations: 3561)
+
+
+Started GET "/users/5df404146a28e6201852405d" for 127.0.0.1 at 2019-12-13 15:37:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df404146a28e6201852405d"}
+MONGODB | [15] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df404146a28e6201852405d')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [15] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.2ms | MongoDB: 0.0ms | Allocations: 5188)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:39:08 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [16] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [16] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2759)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | MongoDB: 0.0ms | Allocations: 7102)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:39:14 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 1867)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2223)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | MongoDB: 0.0ms | Allocations: 6048)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-13 15:39:20 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Xxg53tbsxIeSQ3gvQMVK64BIq4jShYtYBE0dlg72Q4ZlAAFieXPMeem8mamdl7Kt8VXKIqzM4m6YV2pJbLAZGA==", "user"=>{"email"=>"g", "name"=>"f", "last_name"=>"asda", "mobile_phone"=>"asda", "work_place"=>"zxcxczxcz"}, "commit"=>"Create User"}
+MONGODB | [17] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df405086a28e6201852405e'), "email"=>"g", "name"=>"f", "last_name"=>"asda", "mobile_phone"=>"asda", "work_place"=>"zxcxczxcz"}], "lsid"=>{"id"=><BSON::Binary:0x47419054588880 t...
+MONGODB | [17] localhost:27017 | blog_development.insert | SUCCEEDED | 0.000s
+Redirected to http://localhost:3000/users/5df405086a28e6201852405e
+Completed 302 Found in 4ms (MongoDB: 0.0ms | Allocations: 1660)
+
+
+Started GET "/users/5df405086a28e6201852405e" for 127.0.0.1 at 2019-12-13 15:39:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df405086a28e6201852405e"}
+MONGODB | [18] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df405086a28e6201852405e')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [18] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 5.9ms | MongoDB: 0.0ms | Allocations: 5570)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:39:22 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [19] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [19] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.1ms | MongoDB: 0.0ms | Allocations: 5753)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:43:56 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 1419)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | MongoDB: 0.0ms | Allocations: 5197)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:43:58 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [20] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [20] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2617)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.5ms | MongoDB: 0.0ms | Allocations: 6221)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:43:59 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.8ms | Allocations: 1417)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1513)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.4ms | MongoDB: 0.0ms | Allocations: 5200)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:45:49 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [21] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [21] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.4ms | MongoDB: 0.0ms | Allocations: 5754)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-12-13 15:49:28 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.8ms | Allocations: 1422)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.7ms | MongoDB: 0.0ms | Allocations: 5199)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-12-13 15:49:35 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"MpffgcCfIKMEzzcfp7J3H7y1LIbesGrKIEG19Cp02XUIj+c9bwAoXX8w1pl64I9ZzahNLKD5A/y8W8IrSDKD6w==", "user"=>{"email"=>"ascascaa", "name"=>"ascasc", "last_name"=>"ascasc", "mobile_phone"=>"", "work_place"=>"ascasca"}, "commit"=>"Create User"}
+MONGODB | [22] localhost:27017 #1 | blog_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('5df4076f6a28e6201852405f'), "email"=>"ascascaa", "name"=>"ascasc", "last_name"=>"ascasc", "mobile_phone"=>"", "work_place"=>"ascasca"}], "lsid"=>{"id"=><BSON::Binary:0x47419054...
+MONGODB | [22] localhost:27017 | blog_development.insert | SUCCEEDED | 0.000s
+Redirected to http://localhost:3000/users/5df4076f6a28e6201852405f
+Completed 302 Found in 2ms (MongoDB: 0.0ms | Allocations: 1658)
+
+
+Started GET "/users/5df4076f6a28e6201852405f" for 127.0.0.1 at 2019-12-13 15:49:35 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5df4076f6a28e6201852405f"}
+MONGODB | [23] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('5df4076f6a28e6201852405f')}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [23] localhost:27017 | blog_development.find | SUCCEEDED | 0.000s
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.4ms | MongoDB: 0.0ms | Allocations: 5179)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-12-13 15:50:00 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+MONGODB | [24] localhost:27017 #1 | blog_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}}
+MONGODB | [24] localhost:27017 | blog_development.find | SUCCEEDED | 0.001s
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2320)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.9ms | MongoDB: 0.0ms | Allocations: 5926)
+
+
+MONGODB | [25] localhost:27017 #2 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47419054588880 type=uuid data=0x461cd577ce1d499b...>}]}
+MONGODB | [25] localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
